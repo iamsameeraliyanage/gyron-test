@@ -1,0 +1,36 @@
+{
+  "Homepage": {
+    "title": "Homepage",
+    "description": "Homepage description",
+    "event": {
+      "title": "Aero Friedrichshafen 2025",
+      "infoTitle": "Experience Innovation",
+      "eventLocation": "Friedrichshafen, Germany",
+      "eventDate": "April 9-12, 2025",
+      "footerTitle": "Stay in the loop.",
+      "footerDescription": "Be the first to access exclusive updates, demo schedules, and more!",
+      "termsCondition": "By clicking Subscribe you're confirming that you agree with our <termsLink>Terms and Conditions</termsLink>.",
+      "form": {
+        "emailPlaceholder": "Enter your email address",
+        "subscribeButton": "Subscribe",
+        "emailRequired": "Email is required",
+        "invalidEmail": "Invalid email address",
+        "emailSent": "Subscription successful!",
+        "emailError": "Slow down, too many attempts, try again after 5 seconds!",
+        "emailSpam": "Spam detected!"
+      }
+    }
+  },
+  "About": {
+    "title": "About",
+    "description": "About description"
+  },
+  "Configurator": {
+    "title": "Configurator",
+    "description": "Configurator description"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, de {Deutsch} en {English} other {Unknown}}"
+  }
+}

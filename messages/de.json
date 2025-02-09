@@ -1,0 +1,36 @@
+{
+  "Homepage": {
+    "title": "Startseite",
+    "description": "Startseitenbeschreibung",
+    "event": {
+      "title": "Aero Friedrichshafen 2025",
+      "infoTitle": "Innovation erleben",
+      "eventLocation": "Friedrichshafen, Deutschland",
+      "eventDate": "9-12. April 2025",
+      "footerTitle": "Bleiben Sie auf dem Laufenden.",
+      "footerDescription": "Seien Sie der Erste, der exklusive Updates, Demo-Zeitpläne und mehr erhält!",
+      "termsCondition": "Indem Sie auf Abonnieren klicken, bestätigen Sie, dass Sie unseren <termsLink>Allgemeinen Geschäftsbedingungen</termsLink> zustimmen.",
+      "form": {
+        "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+        "subscribeButton": "Abonnieren",
+        "emailRequired": "Email ist erforderlich",
+        "invalidEmail": "Ungültige E-Mail-Adresse",
+        "emailSent": "Abonnement erfolgreich!",
+        "emailError": "Verwenden Sie bitte nicht zu viele Versuche, versuchen Sie es bitte nach 5 Sekunden erneut!",
+        "emailSpam": "Spam erkannt!"
+      }
+    }
+  },
+  "About": {
+    "title": "Über uns",
+    "description": "Beschreibung über uns"
+  },
+  "Configurator": {
+    "title": "Konfigurator",
+    "description": "Konfiguratorbeschreibung"
+  },
+  "LocaleSwitcher": {
+    "label": "Sprache ändern",
+    "locale": "{locale, select, de {Deutsch} en {Englisch} other {Unbekannt}}"
+  }
+}
