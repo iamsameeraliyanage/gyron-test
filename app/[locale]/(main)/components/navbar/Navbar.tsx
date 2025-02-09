@@ -45,7 +45,7 @@ const Navbar = ({ navLinks }: { navLinks: NavBarLink[] }) => {
             aria-description="mobile-menu"
           >
             <div className="flex items-center w-full justify-center">
-              <Link href="/" className="p-4 w-60 h-auto">
+              <Link href="/" className="p-8 w-80 h-auto">
                 <Image
                   src="/gyro-full.png"
                   alt="Gyron Logo"

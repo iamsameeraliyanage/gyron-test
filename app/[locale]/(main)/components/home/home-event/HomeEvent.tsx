@@ -13,9 +13,9 @@ const HomeEvent = () => {
   const [isLogoVisible, setIsLogoVisible] = useState(true);
 
   return (
-    <section className="relative h-[calc(100vh-4.5rem)] md:h-[calc(100vh-5rem)]">
-      <div className="container mx-auto relative h-full py-4 px-4 md:pb-8 md:px-8 overflow-auto">
-        <div className="w-full h-full rounded-lg relative overflow-hidden border border-white border-opacity-15">
+    <section className="relative mt-[5vh] md:mt-0 md:h-[calc(100vh-5rem)]">
+      <div className="container mx-auto relative h-full py-4 px-4 md:pb-8 md:px-8 md:overflow-auto">
+        <div className="w-full md:h-full rounded-lg relative overflow-hidden border border-white border-opacity-15">
           <video
             className="w-full h-full object-cover hidden md:block"
             src={videoUrl}
@@ -24,29 +24,29 @@ const HomeEvent = () => {
             loop
             playsInline
           />
-          <div className="absolute inset-0 z-10 flex flex-col overflow-auto">
+          <div className="md:absolute inset-0 z-10 flex flex-col md:overflow-auto">
             {isLogoVisible && (
               <motion.div
                 className="absolute inset-0 flex items-center justify-center z-10 bg-black/75"
                 initial={{ opacity: 1 }}
                 animate={{ opacity: 0 }}
-                transition={{ delay: 3, duration: 1 }}
+                transition={{ delay: 1, duration: 1 }}
                 onAnimationComplete={() => setIsLogoVisible(false)}
               >
                 <motion.img
                   src="/gyro-logo-icon.png"
                   alt="Gyro Logo Icon"
                   className="w-24 h-24"
-                  initial={{ rotate: 0, scale: 0 }}
-                  animate={{ rotate: 360, scale: 1 }}
+                  initial={{ rotate: 0, opacity: 0 }}
+                  animate={{ rotate: 360, opacity: 1 }}
                   transition={{
                     rotate: {
                       repeat: Infinity,
                       duration: 0.5,
                       ease: 'linear',
                     },
-                    scale: {
-                      duration: 1,
+                    opacity: {
+                      duration: 0.25,
                       ease: 'linear',
                     },
                   }}
@@ -58,7 +58,7 @@ const HomeEvent = () => {
               className="text-white bg-gradient-to-l from-transparent via-black/90 to-black/95 grow"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 3.4, duration: 0.8 }}
+              transition={{ delay: 2.6, duration: 0.8 }}
             >
               <div className="h-full px-8 py-6 md:px-14 3xl:px-20 w-full flex flex-col justify-center">
                 <div className="max-w-xl 3xl:max-w-4xl">
@@ -66,7 +66,7 @@ const HomeEvent = () => {
                     className="text-xl md:text-3xl 3xl:text-4xl font-medium"
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8, delay: 3.6 }}
+                    transition={{ duration: 0.8, delay: 2.9 }}
                   >
                     {translate('infoTitle')}
                   </motion.h3>
@@ -75,7 +75,7 @@ const HomeEvent = () => {
                       className="text-4xl md:text-5xl 3xl:text-7xl font-semibold text-[#EF443B] 3xl:leading-[1.15]"
                       initial={{ opacity: 0, x: -50 }}
                       animate={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.8, delay: 4 }}
+                      transition={{ duration: 0.8, delay: 3.2 }}
                     >
                       {translate('title')}
                     </motion.h2>
@@ -85,7 +85,7 @@ const HomeEvent = () => {
                           className="flex gap-3 items-center text-lg md:text-xl 3xl:text-2xl"
                           initial={{ opacity: 0, x: -50 }}
                           animate={{ opacity: 1, x: 0 }}
-                          transition={{ duration: 0.8, delay: 4.5 }}
+                          transition={{ duration: 0.8, delay: 3.5 }}
                         >
                           <div>
                             <IoCalendar />
@@ -96,7 +96,7 @@ const HomeEvent = () => {
                           className="flex gap-3 items-center text-lg md:text-xl 3xl:text-2xl"
                           initial={{ opacity: 0, x: -50 }}
                           animate={{ opacity: 1, x: 0 }}
-                          transition={{ duration: 0.8, delay: 4.8 }}
+                          transition={{ duration: 0.8, delay: 3.8 }}
                         >
                           <div>
                             <FaLocationDot />
@@ -113,7 +113,7 @@ const HomeEvent = () => {
               className="bg-white py-6 md:py-10 px-6 md:px-14"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 3.4, duration: 0.8 }}
+              transition={{ delay: 2.6, duration: 0.8 }}
             >
               <div className="block md:flex md:-mx-8">
                 <div className="md:grow md:px-8">
@@ -121,7 +121,7 @@ const HomeEvent = () => {
                     className="text-2xl md:text-4xl 3xl:text-5xl font-bold"
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 5.2 }}
+                    transition={{ duration: 0.8, delay: 4.2 }}
                   >
                     {translate('footerTitle')}
                   </motion.h3>
@@ -130,7 +130,7 @@ const HomeEvent = () => {
                       className="text-md md:text-lg"
                       initial={{ opacity: 0, y: 50 }}
                       animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.8, delay: 5.5 }}
+                      transition={{ duration: 0.8, delay: 4.5 }}
                     >
                       {translate('footerDescription')}
                     </motion.p>
@@ -140,7 +140,7 @@ const HomeEvent = () => {
                   <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 5.8 }}
+                    transition={{ duration: 0.8, delay: 4.8 }}
                   >
                     <SubscribeForm />
                   </motion.div>
@@ -150,7 +150,7 @@ const HomeEvent = () => {
                       className="text-xs"
                       initial={{ opacity: 0, y: 50 }}
                       animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.8, delay: 6.1 }}
+                      transition={{ duration: 0.8, delay: 5.1 }}
                     >
                       {translate.rich('termsCondition', {
                         termsLink: (chunks) => (
@@ -162,7 +162,6 @@ const HomeEvent = () => {
                           </Link>
                         ),
                       })}
-                      .
                     </motion.p>
                   </div>
                 </div>

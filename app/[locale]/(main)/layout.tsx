@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Navbar from './components/navbar/Navbar';
-import Footer from './components/footer/Footer';
+// import Footer from './components/footer/Footer';
 import { Locale, routing } from '@/i18n/routing';
 import { notFound } from 'next/navigation';
 import BaseLayout from '@/app/components/base-layout/BaseLayout';

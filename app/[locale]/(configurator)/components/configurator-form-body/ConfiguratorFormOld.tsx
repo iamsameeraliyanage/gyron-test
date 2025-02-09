@@ -74,9 +74,9 @@ const ConfiguratorForm = ({
     }
   };
 
-  const handleBack = () => {
-    setCurrentStep((prev) => Math.max(prev - 1, 0));
-  };
+  // const handleBack = () => {
+  //   setCurrentStep((prev) => Math.max(prev - 1, 0));
+  // };
 
   const onSubmit = () => {
     if (currentStep < updatedData.length - 1) {
