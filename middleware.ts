@@ -21,6 +21,8 @@ const defaultLocale = 'en';
 // Middleware function
 export default function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
+  const cfCountry = req.headers.get('cf-ipcountry') || 'Unknown';
+  console.log(cfCountry);
 
   // Skip middleware for static files and API routes
   if (pathname.startsWith('/_next') || pathname.startsWith('/api')) {
