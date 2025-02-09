@@ -13,8 +13,8 @@ const HomeEvent = () => {
   const [isLogoVisible, setIsLogoVisible] = useState(true);
 
   return (
-    <section className="relative mt-[5vh] md:mt-0 md:h-[calc(100vh-5rem)]">
-      <div className="container mx-auto relative h-full py-4 px-4 md:pb-8 md:px-8 md:overflow-auto">
+    <section className="relative mt-[4vh] md:mt-0 md:h-[calc(100vh-5rem)]">
+      <div className="container mx-auto relative h-full md:py-4 px-4 md:pb-8 md:px-8 md:overflow-auto">
         <div className="w-full md:h-full rounded-lg relative overflow-hidden border border-white border-opacity-15">
           <video
             className="w-full h-full object-cover hidden md:block"
@@ -60,10 +60,10 @@ const HomeEvent = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 2.6, duration: 0.8 }}
             >
-              <div className="h-full px-8 py-6 md:px-14 3xl:px-20 w-full flex flex-col justify-center">
+              <div className="h-full px-8 py-16 md:py-6 md:px-14 3xl:px-20 w-full flex flex-col justify-center">
                 <div className="max-w-xl 3xl:max-w-4xl">
                   <motion.h3
-                    className="text-xl md:text-3xl 3xl:text-4xl font-medium"
+                    className="text-3xl md:text-3xl 3xl:text-4xl font-medium"
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, delay: 2.9 }}
@@ -72,7 +72,7 @@ const HomeEvent = () => {
                   </motion.h3>
                   <div className="mt-2">
                     <motion.h2
-                      className="text-4xl md:text-5xl 3xl:text-7xl font-semibold text-[#EF443B] 3xl:leading-[1.15]"
+                      className="text-5xl md:text-5xl 3xl:text-7xl font-semibold text-[#EF443B] 3xl:leading-[1.15]"
                       initial={{ opacity: 0, x: -50 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.8, delay: 3.2 }}
@@ -82,7 +82,7 @@ const HomeEvent = () => {
                     <div className="mt-4 md:mt-6 3xl:mt-8 pl-0 md:pl-8 3xl:pl-12">
                       <ul className="flex flex-col gap-3">
                         <motion.li
-                          className="flex gap-3 items-center text-lg md:text-xl 3xl:text-2xl"
+                          className="flex gap-3 items-center text-xl md:text-xl 3xl:text-2xl"
                           initial={{ opacity: 0, x: -50 }}
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ duration: 0.8, delay: 3.5 }}
@@ -93,7 +93,7 @@ const HomeEvent = () => {
                           <div>{translate('eventDate')}</div>
                         </motion.li>
                         <motion.li
-                          className="flex gap-3 items-center text-lg md:text-xl 3xl:text-2xl"
+                          className="flex gap-3 items-center text-xl md:text-xl 3xl:text-2xl"
                           initial={{ opacity: 0, x: -50 }}
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ duration: 0.8, delay: 3.8 }}
@@ -118,7 +118,7 @@ const HomeEvent = () => {
               <div className="block md:flex md:-mx-8">
                 <div className="md:grow md:px-8">
                   <motion.h3
-                    className="text-2xl md:text-4xl 3xl:text-5xl font-bold"
+                    className="text-4xl md:text-4xl 3xl:text-5xl font-bold"
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 4.2 }}

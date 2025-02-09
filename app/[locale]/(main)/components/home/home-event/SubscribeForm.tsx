@@ -51,7 +51,7 @@ const SubscribeForm = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
-      <div className="flex gap-2 items-start w-full">
+      <div className="md:flex gap-2 items-start w-full">
         <div className="grow">
           <Controller
             name="email"
@@ -79,9 +79,9 @@ const SubscribeForm = () => {
             render={({ field }) => <input type="hidden" {...field} />}
           />
         </div>
-        <div>
+        <div className="mt-4 md:mt-0">
           <button
-            className="bg-primary text-white py-3 px-4 rounded-md hover:bg-skyline transition-all"
+            className="bg-primary w-full text-white py-3 px-4 rounded-md hover:bg-skyline transition-all"
             type="submit"
             disabled={isSubmitting}
           >
