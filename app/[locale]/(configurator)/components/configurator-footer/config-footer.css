@@ -1,0 +1,105 @@
+.configIconButton {
+  transition: all 0.3s ease-in-out;
+}
+.configIconButton .configIconButtonInner {
+  transition: all 0.3s ease-in-out;
+}
+.configIconButton .configIconButtonInner .configButtonIconWrapper {
+  transition: all 0.3s ease-in-out;
+}
+.configIconButton
+  .configIconButtonInner
+  .configButtonIconWrapper
+  .configButtonIcon {
+  transition: all 0.3s ease-in-out;
+}
+.configIconButton .configIconButtonInner .configButtonText {
+  transition: all 0.3s ease-in-out;
+}
+.configIconButton:hover
+  .configIconButtonInner
+  .configButtonIconWrapper
+  .configButtonIcon {
+  background-color: var(--skyline);
+  color: var(--textWhite);
+  transform: rotate(360deg);
+}
+.configIconButton:hover .configIconButtonInner .configButtonText {
+  color: var(--skyline);
+  font-weight: 700;
+}
+.configIconButton.isActive
+  .configIconButtonInner
+  .configButtonIconWrapper
+  .configButtonIcon {
+  background-color: var(--skyline);
+  color: var(--textWhite);
+}
+.configIconButton.isActive .configIconButtonInner .configButtonText {
+  color: var(--skyline);
+}
+.configIconButton.isActive:hover
+  .configIconButtonInner
+  .configButtonIconWrapper
+  .configButtonIcon {
+  transform: none;
+  box-shadow: 0 4px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.configIconButton.isActive:hover .configIconButtonInner .configButtonText {
+  color: var(--skyline);
+  font-weight: 700;
+}
+.configIconButton.isCompleted
+  .configIconButtonInner
+  .configButtonIconWrapper
+  .configButtonIcon {
+  background-color: var(--primary);
+  color: var(--textWhite);
+}
+.configIconButton.isCompleted:hover
+  .configIconButtonInner
+  .configButtonIconWrapper
+  .configButtonIcon {
+  transform: none;
+  box-shadow: 0 4px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.configIconButton.isCompleted:hover .configIconButtonInner .configButtonText {
+  color: var(--primary);
+  font-weight: 700;
+}
+.configIconButton.isActive.isCompleted
+  .configIconButtonInner
+  .configButtonIconWrapper
+  .configButtonIcon {
+  background-color: var(--skyline);
+  color: var(--textWhite);
+}
+.configIconButton.isActive.isCompleted
+  .configIconButtonInner
+  .configButtonText {
+  font-weight: 700;
+}
+.configIconButton.isActive.isCompleted:hover
+  .configIconButtonInner
+  .configButtonIconWrapper
+  .configButtonIcon {
+  transform: none;
+  box-shadow: 0 4px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.configIconButton.isActive.isCompleted:hover
+  .configIconButtonInner
+  .configButtonText {
+  color: var(--skyline);
+}
+.configRadio,
+.configCheckbox {
+  transition: all 0.3s;
+}
+.configRadio:hover,
+.configCheckbox:hover {
+  background-color: rgba(0, 119, 193, 0.05);
+}
+.configRadio.isChecked,
+.configCheckbox.isChecked {
+  background-color: rgba(0, 119, 193, 0.15);
+}

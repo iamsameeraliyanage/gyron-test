@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #0a0a0a;
+  --skyline: #0077c1;
+  --configOverlay: #f8f8f8;
+  --configFooter: #e2e4e6;
+  --textWhite: #ffffff;
+  --font-albert-sans: 'Albert Sans', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+html {
+  font-size: 12px;
+}
+html,
+body {
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-poppins);
+}
+
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 13.5px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 14.5px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.modelSliderOverlay {
+  background-color: rgba(0, 0, 0, 0.65);
+  clip-path: polygon(0% 0%, 80% 0%, 60% 100%, 0% 100%);
+  overflow: hidden;
+}
+.newsBannerOverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.pageHtmlContent h2 {
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.pageHtmlContent p {
+  color: #555;
+  margin-bottom: 16px;
+}
+.pageHtmlContent ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 16px;
+}
+
+::-webkit-scrollbar {
+  width: 0.25em;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 46px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #696969;
+  outline: 1px solid #001122;
+}

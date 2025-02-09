@@ -1,0 +1,30 @@
+.orderNowButton {
+  transition: all 0.3s ease-in-out;
+}
+.orderNowButton:disabled {
+  pointer-events: none;
+  background-color: #3c57630d;
+}
+.orderNowButton.isSubmitting {
+  pointer-events: none;
+}
+.orderNowButton.isValid {
+  pointer-events: auto;
+}
+.orderNowButton:disabled .orderNowText {
+  transition: all 0.3s ease-in-out;
+  background-color: #898c94;
+}
+
+.orderNowButton .orderNowText {
+  background-color: #0077c1;
+}
+
+.configFormFieldItemWrapperLabel {
+  padding: 16px;
+}
+.configFormFieldItemWrapperLabel.isChecked {
+  background-color: #0077c126;
+  border-radius: 8px;
+  border: 1px solid #0077c1;
+}
